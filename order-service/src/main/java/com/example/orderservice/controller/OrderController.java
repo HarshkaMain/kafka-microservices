@@ -1,5 +1,6 @@
 package com.example.orderservice.controller;
 
+import com.example.orderservice.dto.CreateOrderRequest;
 import com.example.orderservice.service.OrderService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,8 +16,11 @@ public class OrderController {
 
 
     @PostMapping
-    public String createOrder() {
-        return orderService.createOrder();
-    }
+public String createOrder(
+        @RequestBody CreateOrderRequest request
+) {
+    return orderService.createOrder(request);
+}
+
 
 }
