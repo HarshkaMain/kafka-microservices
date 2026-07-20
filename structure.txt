@@ -1,0 +1,142 @@
+Folder PATH listing
+Volume serial number is 00000075 DDBE:92B0
+C:.
+¦   .gitignore
+¦   LICENSE
+¦   mvnw
+¦   mvnw.cmd
+¦   pom.xml
+¦   README.md
+¦   structure.txt
+¦   
++---.mvn
+¦   +---wrapper
+¦           maven-wrapper.properties
+¦           
++---.vscode
+¦       settings.json
+¦       
++---base-domains
+¦   ¦   pom.xml
+¦   ¦   
+¦   +---src
+¦   ¦   +---main
+¦   ¦       +---java
+¦   ¦           +---com
+¦   ¦               +---example
+¦   ¦                   +---basedomains
+¦   ¦                       +---dto
+¦   ¦                       +---event
+¦   ¦                       ¦       OrderCreatedEvent.java
+¦   ¦                       ¦       
+¦   ¦                       +---model
+¦   ¦                               Order.java
+¦   ¦                               
+¦   +---target
+¦       ¦   base-domains-1.0-SNAPSHOT.jar
+¦       ¦   
+¦       +---classes
+¦       ¦   +---com
+¦       ¦       +---example
+¦       ¦           +---basedomains
+¦       ¦               +---dto
+¦       ¦               +---event
+¦       ¦               ¦       OrderCreatedEvent$OrderCreatedEventBuilder.class
+¦       ¦               ¦       OrderCreatedEvent.class
+¦       ¦               ¦       
+¦       ¦               +---model
+¦       ¦                       Order$OrderBuilder.class
+¦       ¦                       Order.class
+¦       ¦                       
+¦       +---generated-sources
+¦       ¦   +---annotations
+¦       +---generated-test-sources
+¦       ¦   +---test-annotations
+¦       +---maven-archiver
+¦       ¦       pom.properties
+¦       ¦       
+¦       +---maven-status
+¦       ¦   +---maven-compiler-plugin
+¦       ¦       +---compile
+¦       ¦           +---default-compile
+¦       ¦                   createdFiles.lst
+¦       ¦                   inputFiles.lst
+¦       ¦                   
+¦       +---test-classes
++---email-service
+¦   ¦   pom.xml
+¦   ¦   
+¦   +---target
+¦       ¦   email-service-1.0-SNAPSHOT.jar
+¦       ¦   
+¦       +---maven-archiver
+¦               pom.properties
+¦               
++---order-service
+¦   ¦   docker-compose.yml
+¦   ¦   pom.xml
+¦   ¦   
+¦   +---src
+¦   ¦   +---main
+¦   ¦       +---java
+¦   ¦           +---com
+¦   ¦               +---example
+¦   ¦                   +---order
+¦   ¦                   ¦   +---config
+¦   ¦                   ¦   +---controller
+¦   ¦                   ¦   +---producer
+¦   ¦                   ¦   +---service
+¦   ¦                   +---orderservice
+¦   ¦                       ¦   OrderServiceApplication.java
+¦   ¦                       ¦   
+¦   ¦                       +---config
+¦   ¦                       +---controller
+¦   ¦                       ¦       OrderController.java
+¦   ¦                       ¦       
+¦   ¦                       +---producer
+¦   ¦                       +---service
+¦   ¦                               OrderService.java
+¦   ¦                               
+¦   +---target
+¦       ¦   order-service-1.0-SNAPSHOT.jar
+¦       ¦   
+¦       +---classes
+¦       ¦   +---com
+¦       ¦       +---example
+¦       ¦           +---order
+¦       ¦           ¦   +---config
+¦       ¦           ¦   +---controller
+¦       ¦           ¦   +---producer
+¦       ¦           ¦   +---service
+¦       ¦           +---orderservice
+¦       ¦               ¦   OrderServiceApplication.class
+¦       ¦               ¦   
+¦       ¦               +---config
+¦       ¦               +---controller
+¦       ¦               ¦       OrderController.class
+¦       ¦               ¦       
+¦       ¦               +---producer
+¦       ¦               +---service
+¦       ¦                       OrderService.class
+¦       ¦                       
+¦       +---generated-sources
+¦       ¦   +---annotations
+¦       +---maven-archiver
+¦       ¦       pom.properties
+¦       ¦       
+¦       +---maven-status
+¦           +---maven-compiler-plugin
+¦               +---compile
+¦                   +---default-compile
+¦                           createdFiles.lst
+¦                           inputFiles.lst
+¦                           
++---stock-service
+    ¦   pom.xml
+    ¦   
+    +---target
+        ¦   stock-service-1.0-SNAPSHOT.jar
+        ¦   
+        +---maven-archiver
+                pom.properties
+                
