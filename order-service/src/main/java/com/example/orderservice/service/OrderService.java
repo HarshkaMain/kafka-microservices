@@ -19,11 +19,11 @@ public class OrderService {
 
     public Order createOrder(CreateOrderRequest request) {
         Order order = Order.builder()
-                .id(1L)
-                .customerName("Harsh")
-                .product(request.getProductName())
-                .quantity(request.getQuantity())
-                .build();
+        .id(System.currentTimeMillis())
+        .customerName(request.getCustomerName())
+        .product(request.getProductName())
+        .quantity(request.getQuantity())
+        .build();
 
         OrderCreatedEvent event = OrderCreatedEvent.builder()
                 .orderId(order.getId())
@@ -31,7 +31,7 @@ public class OrderService {
                 .product(order.getProduct())
                 .quantity(order.getQuantity())
                 .build();
-
+System.out.println("CREATED ORDER ID: " + order.getId());
         orderProducer.sendMessage(event);
         log.info("Order created and event published: {}", event);
 
