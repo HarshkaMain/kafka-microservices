@@ -31,7 +31,6 @@ public class OrderService {
                 .product(order.getProduct())
                 .quantity(order.getQuantity())
                 .build();
-System.out.println("CREATED ORDER ID: " + order.getId());
         orderProducer.sendMessage(event);
         log.info("Order created and event published: {}", event);
 
