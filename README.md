@@ -348,7 +348,7 @@ This project focuses on understanding:
 
 # Author
 
-Harsh
+Harsh S. Koyande
 
 Backend Developer
 Java | Spring Boot | Kafka | Microservices
